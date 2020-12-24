@@ -1,9 +1,3 @@
-Create an nginx pod using a yaml file.  Set restart to Never
-kubectl run nginx --image=nginx --dry-run --restart=Never -o yaml > nginx-pod.yaml
-kubectl apply -f nginx-pod.yaml
-
-Export the yaml of the nginx pod without cluster-specific information:
-kubectl get pod nginx -o yaml --export
 
 Delete the pod with no delay
 kubectl delete pod nginx --grace-period=0 --force
