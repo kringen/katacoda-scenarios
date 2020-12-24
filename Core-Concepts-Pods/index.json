@@ -1,19 +1,19 @@
 {
-  "title": "Kubernetes CKAD Prep Lab",
+  "title": "Kubernetes CKAD Prep Lab - Core Concepts - Pods",
   "description": "Preparation for the CKAD Exam",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Pods",
+        "title": "Pod Basics",
         "text": "step1.md",
-        "verify": "verify_pods.sh"
+        "verify": "verify_step1.sh"
       },
       {
-        "title": "ReplicaSets",
+        "title": "Pods Continued",
         "text": "step2.md",
-        "verify": "verify_replica_sets.sh"
+        "verify": "verify_step2.sh"
       },
       {
         "title": "Deployments",
