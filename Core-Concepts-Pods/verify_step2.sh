@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Not cool"
+echo "done"
