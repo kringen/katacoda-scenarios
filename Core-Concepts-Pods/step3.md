@@ -1,4 +1,4 @@
-## Updating and Deleting Pods
+## Updating Pods
 
 1. Change the image version of the web pod to use the 1.15-alpine tag.
 2. Check the image version of the web pod using jsonpath syntax.
@@ -8,9 +8,13 @@
 <summary>solution</summary>
 <p>
 
-```console
-# change the image of the pod you just created to use 1.15-alpine tag.
+```
+# change the image of the pod you just created to use 1.15-alpine tag.  syntax is container=<image>:<tag>
 kubectl set image pod/nginx nginx=nginx:1.15-alpine
+
+# Alternatively, you can do:
+kubectl edit pod nginx
+
 kubectl describe pod nginx
 kubectl set image --help for more examples
 

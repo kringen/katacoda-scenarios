@@ -9,7 +9,7 @@
 
 2. Create the pod using the previously generated YAML file.
 - pod should run on the jakku namespace.
-  
+
 <details>
 <summary>solution</summary>
 <p>

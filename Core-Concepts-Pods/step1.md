@@ -1,10 +1,11 @@
 ## Create Namespace
 1. Create a namespace named "jakku".
+
 <details>
 <summary>solution</summary>
 <p>
 
-```console
+```
 kubectl create namespace jakku
 ```
 </p>
@@ -17,12 +18,17 @@ kubectl create namespace jakku
 - pod should be deployed on the jakku namespace.
 - pod should have a restart policy of Never.
 - pos service should be exposed on port 80.
+
+1. What command would be useful to find the IP address of the pod and on which node is the pod running?
+   
 <details>
 <summary>solution</summary>
 <p>
 
-```console
+```
 kubectl run web --image=nginx:latest --restart=Never -n jakku --dry-run --port 80 -o yaml > ~/web-pod.yaml
+
+kubectl get pod web -n jakku -o wide
 
 ```
 </p>
@@ -43,7 +49,7 @@ kubectl run web --image=nginx:latest --restart=Never -n jakku --dry-run --port 8
 <summary>solution</summary>
 <p>
 
-```console
+```
 kubectl run busybox-sleep --image=busybox -n jakku --restart=Never -- /bin/sh -c "sleep 3600;"
 
 ```

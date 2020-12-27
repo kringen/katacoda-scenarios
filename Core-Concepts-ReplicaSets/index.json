@@ -6,22 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Pod Basics",
-        "text": "step1.md",
-        "verify": "verify_step1.sh"
+        "title": "ReplicaSet Basics",
+        "text": "step1.md"
       },
       {
-        "title": "Pods Continued",
-        "text": "step2.md",
-        "verify": "verify_step2.sh"
-      },
-      {
-        "title": "Updating Pods",
-        "text": "step3.md"
-      },
-      {
-        "title": "Deleting Pods",
-        "text": "step4.md"
+        "title": "ReplicaSets Continued",
+        "text": "step2.md"
       }
     ],
     "intro": {
