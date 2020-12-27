@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes CKAD Prep Lab - Core Concepts - Pods",
+  "title": "Kubernetes CKAD Prep Lab - Core Concepts - ReplicaSets",
   "description": "Preparation for the CKAD Exam",
   "difficulty": "Beginner",
   "time": "20 minutes",
