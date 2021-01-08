@@ -26,7 +26,7 @@ kubectl create namespace jakku
 <p>
 
 ```
-kubectl run web --image=nginx:latest --restart=Never -n jakku --dry-run --port 80 -o yaml > ~/web-pod.yaml
+kubectl run web --image=nginx:latest --restart=Never -n jakku --dry-run=client --port 80 -o yaml > ~/web-pod.yaml
 
 kubectl get pod web -n jakku -o wide
 
