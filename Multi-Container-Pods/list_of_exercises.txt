@@ -1,0 +1,36 @@
+
+Delete the pod with no delay
+kubectl delete pod nginx --grace-period=0 --force
+
+create the pod and expose the service on port 80
+kubectl run nginx --restart=Never --port=80
+
+change the image of the pod you just created to use 1.15-alpine tag.
+kubectl set image pod/nginx nginx=nginx:1.15-alpine
+kubectl describe pod nginx
+kubectl set image --help for more examples
+
+check the image version of a pod using jsonpath
+kubectl get po nginx -o jsonpath='{.spec.containers[].image}{"\n"}'
+
+Get the IP address of the pod you just created
+kubectl get pod nginx -o wide
+
+Create a busybox pod and run the ls command
+view the logs
+kubectl run busybox --image=busybox --restart=Never -- ls
+kubectl logs busybox
+
+If pod crashes, check the previous logs:
+kubectl logs busybox -p
+
+Create a busybox pod with the command sleep 600
+kubectl run busybox-sleep --image=busybox --restart=Never -- /bin/sh -c "sleep 600"
+
+Check the connection to the nginx pod using the busybox pod.
+kubectl get pod nginx -o wide
+kubectl run busybox-wget --image=busybox --restart=Never -- wget -o- <ip address>
+kubectl exec -it busybox -- wget -o- <ip address>
+
+Create a busybox pod, have it echo "Hello" then delete it immediately.
+kubectl run busybox-delete --image=busyboxy --restart=Never -it --rm -- echo "Nello"

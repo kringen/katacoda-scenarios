@@ -1,0 +1,30 @@
+{
+  "title": "Kubernetes CKAD Prep Lab - Multi-container Pods",
+  "description": "Preparation for the CKAD Exam",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Multi-Container Pods",
+        "text": "step1.md"
+      },
+      {
+        "title": "Sharing Volumes Between Containers",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
