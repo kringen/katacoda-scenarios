@@ -44,7 +44,6 @@ kubectl get pod web -n jakku -o wide
 - Pod should run the following commands:
   - sleep for 3600 seconds.
 
-
 <details>
 <summary>solution</summary>
 <p>
