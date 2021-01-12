@@ -18,6 +18,7 @@
 kubectl run nginx-from-yaml --image=nginx --dry-run=client -n jakku --restart=Never -o yaml > nginx-from-yaml.yaml
 
 kubectl apply -f nginx-from-yaml.yaml -n jakku
+
 ```
 </p>
 </details>
