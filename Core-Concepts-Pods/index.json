@@ -31,10 +31,11 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "controlplane": [
         {
           "file": "*.sh",
-          "target": "/root"
+          "target": "/root",
+          "chmod": "+x"
         }
       ]
     }
